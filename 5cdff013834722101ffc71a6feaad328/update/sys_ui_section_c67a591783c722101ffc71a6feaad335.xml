@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Activity/Notes" section_id="c67a591783c722101ffc71a6feaad335" sys_domain="global" table="x_1539926_event_ma_venue" version="3" view="Planner_View">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>work_notes</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-08-04 08:53:53</sys_created_on>
+            <sys_id>4a7a591783c722101ffc71a6feaad36b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Activity/Notes" display_value="Activity/Notes" name="x_1539926_event_ma_venue" sys_domain="global" view="df9f8157838722101ffc71a6feaad3f8">c67a591783c722101ffc71a6feaad335</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-08-04 08:53:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>activity.xml</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-08-04 08:53:53</sys_created_on>
+            <sys_id>ce7a591783c722101ffc71a6feaad36b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter display_value="Activities (filtered)">444ea5c6bf310100e628555b3f0739d6</sys_ui_formatter>
+            <sys_ui_section caption="Activity/Notes" display_value="Activity/Notes" name="x_1539926_event_ma_venue" sys_domain="global" view="df9f8157838722101ffc71a6feaad3f8">c67a591783c722101ffc71a6feaad335</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-08-04 08:53:53</sys_updated_on>
+            <sys_user/>
+            <type>formatter</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Activity/Notes</caption>
+            <header>false</header>
+            <name>x_1539926_event_ma_venue</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-08-04 08:53:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c67a591783c722101ffc71a6feaad335</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1539926_event_ma_venue</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Event Management" source="x_1539926_event_ma">5cdff013834722101ffc71a6feaad328</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Event Management">5cdff013834722101ffc71a6feaad328</sys_scope>
+            <sys_update_name>sys_ui_section_c67a591783c722101ffc71a6feaad335</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-08-04 08:53:52</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Planner View" name="Planner_View">df9f8157838722101ffc71a6feaad3f8</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

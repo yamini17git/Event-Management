@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_process_flow">
+    <sys_process_flow action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_1539926_event_ma_event">x_status=cancelled^EQ<item display_value="Cancelled" endquery="false" field="x_status" goto="false" newquery="false" operator="=" or="false" value="cancelled"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <description/>
+        <label>Cancelled</label>
+        <name>Event flow</name>
+        <order>4</order>
+        <sys_class_name>sys_process_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 08:08:54</sys_created_on>
+        <sys_id>c3205d17838722101ffc71a6feaad304</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Event flow</sys_name>
+        <sys_package display_value="Event Management" source="x_1539926_event_ma">5cdff013834722101ffc71a6feaad328</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management">5cdff013834722101ffc71a6feaad328</sys_scope>
+        <sys_update_name>sys_process_flow_c3205d17838722101ffc71a6feaad304</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-04 08:08:54</sys_updated_on>
+        <table>x_1539926_event_ma_event</table>
+    </sys_process_flow>
+</record_update>

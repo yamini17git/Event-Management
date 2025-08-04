@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer">
+    <sys_wizard_answer action="DELETE">
+        <active>true</active>
+        <answer>Event</answer>
+        <button_label/>
+        <dependent_value/>
+        <element/>
+        <name>Event</name>
+        <next_question/>
+        <order>100</order>
+        <payload_name/>
+        <question display_value="Task" name="Task">7816a07b5d3122104f34969735a7adb7</question>
+        <roles/>
+        <script/>
+        <sys_class_name>sys_wizard_answer</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 07:33:50</sys_created_on>
+        <sys_id>e9280ddb834722101ffc71a6feaad38a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Event</sys_name>
+        <sys_package display_value="Event Management" source="x_1539926_event_ma">5cdff013834722101ffc71a6feaad328</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management">5cdff013834722101ffc71a6feaad328</sys_scope>
+        <sys_update_name>sys_wizard_answer_e9280ddb834722101ffc71a6feaad38a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-04 07:33:50</sys_updated_on>
+        <table/>
+        <target_url>x_1539926_event_ma_event.do</target_url>
+        <type>1</type>
+    </sys_wizard_answer>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Event Management">5cdff013834722101ffc71a6feaad328</application>
+        <file_path/>
+        <instance_id>1a250c9eeb6daa5c56eafddacad0cd9a</instance_id>
+        <instance_name>dev348339</instance_name>
+        <name>sys_wizard_answer_e9280ddb834722101ffc71a6feaad38a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer"><sys_wizard_answer action="INSERT_OR_UPDATE"><active>true</active><answer>Event</answer><button_label/><dependent_value/><element/><name>Event</name><next_question/><order>100</order><payload_name/><question display_value="Task" name="Task">7816a07b5d3122104f34969735a7adb7</question><roles/><script/><sys_class_name>sys_wizard_answer</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-08-04 07:33:50</sys_created_on><sys_id>e9280ddb834722101ffc71a6feaad38a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Event</sys_name><sys_package display_value="Event Management" source="x_1539926_event_ma">5cdff013834722101ffc71a6feaad328</sys_package><sys_policy/><sys_scope display_value="Event Management">5cdff013834722101ffc71a6feaad328</sys_scope><sys_update_name>sys_wizard_answer_e9280ddb834722101ffc71a6feaad38a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-08-04 07:33:50</sys_updated_on><table/><target_url>x_1539926_event_ma_event.do</target_url><type>1</type></sys_wizard_answer></record_update>]]></payload>
+        <payload_hash>55994788</payload_hash>
+        <record_name>Event</record_name>
+        <reverted_from/>
+        <source>690f9413830322101ffc71a6feaad3ca</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2025-08-04 04:34:10</sys_created_on>
+        <sys_id>273d4d53838722101ffc71a6feaad31e</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>198735bc1d00000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>Answer</type>
+        <update_guid>e33d4d538287221023e2f9414f47101e</update_guid>
+        <update_guid_history>e33d4d538287221023e2f9414f47101e:55994788</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 07:56:06</sys_created_on>
+        <sys_db_object display_value="" name="sys_wizard_answer">sys_wizard_answer</sys_db_object>
+        <sys_id>c594346c229a4d1dace37249c6910e21</sys_id>
+        <sys_metadata>e9280ddb834722101ffc71a6feaad38a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Event</sys_name>
+        <sys_package display_value="Event Management" source="x_1539926_event_ma">5cdff013834722101ffc71a6feaad328</sys_package>
+        <sys_parent display_value="Task">7816a07b5d3122104f34969735a7adb7</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Event Management">5cdff013834722101ffc71a6feaad328</sys_scope>
+        <sys_scope_delete display_value="">3584b1f0a8cd4a568d9a994f9584b2d9</sys_scope_delete>
+        <sys_update_name>sys_wizard_answer_e9280ddb834722101ffc71a6feaad38a</sys_update_name>
+        <sys_update_version display_value="sys_wizard_answer_e9280ddb834722101ffc71a6feaad38a">273d4d53838722101ffc71a6feaad31e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-04 07:56:06</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

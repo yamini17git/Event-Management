@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 08:55:41</sys_created_on>
+        <sys_id>acea915783c722101ffc71a6feaad374</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1539926_event_ma_schedule.x_1539926_event_ma.schedule_user</sys_name>
+        <sys_package display_value="Event Management" source="x_1539926_event_ma">5cdff013834722101ffc71a6feaad328</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management">5cdff013834722101ffc71a6feaad328</sys_scope>
+        <sys_security_acl display_value="x_1539926_event_ma_schedule">e0ea915783c722101ffc71a6feaad371</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_acea915783c722101ffc71a6feaad374</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-04 08:55:41</sys_updated_on>
+        <sys_user_role display_value="x_1539926_event_ma.schedule_user" name="x_1539926_event_ma.schedule_user">50ea1d1783c722101ffc71a6feaad3ae</sys_user_role>
+    </sys_security_acl_role>
+</record_update>

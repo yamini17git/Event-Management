@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="233ad11783c722101ffc71a6feaad3cd" sys_domain="global" table="x_1539926_event_ma_venue" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-08-04 08:52:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6b3ad11783c722101ffc71a6feaad3cf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1539926_event_ma_venue" name="x_1539926_event_ma_venue" sys_domain="global" view="Default view">233ad11783c722101ffc71a6feaad3cd</sys_ui_form>
+            <sys_ui_section caption="Venue Details" display_value="Venue Details" name="x_1539926_event_ma_venue" sys_domain="global" view="Default view">1a89d19383c722101ffc71a6feaad346</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-08-04 08:52:54</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-08-04 08:52:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>273ad11783c722101ffc71a6feaad3d0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1539926_event_ma_venue" name="x_1539926_event_ma_venue" sys_domain="global" view="Default view">233ad11783c722101ffc71a6feaad3cd</sys_ui_form>
+            <sys_ui_section caption="Activity/Notes" display_value="Activity/Notes" name="x_1539926_event_ma_venue" sys_domain="global" view="Default view">233ad11783c722101ffc71a6feaad3cc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-08-04 08:52:54</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_1539926_event_ma_venue</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-08-04 08:52:53</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>233ad11783c722101ffc71a6feaad3cd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1539926_event_ma_venue</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Event Management" source="x_1539926_event_ma">5cdff013834722101ffc71a6feaad328</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Event Management">5cdff013834722101ffc71a6feaad328</sys_scope>
+            <sys_update_name>sys_ui_form_sections_233ad11783c722101ffc71a6feaad3cd</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-08-04 08:52:53</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

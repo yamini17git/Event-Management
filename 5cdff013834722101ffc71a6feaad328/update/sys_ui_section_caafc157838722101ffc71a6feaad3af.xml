@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Event Information" section_id="caafc157838722101ffc71a6feaad3af" sys_domain="global" table="x_1539926_event_ma_event" version="3" view="Coordinator_View">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>number</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-08-04 08:06:39</sys_created_on>
+            <sys_id>06af0557838722101ffc71a6feaad32e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Event Information" display_value="Event Information" name="x_1539926_event_ma_event" sys_domain="global" view="4eafc157838722101ffc71a6feaad3ab">caafc157838722101ffc71a6feaad3af</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-08-04 08:06:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_event_name</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-08-04 08:06:39</sys_created_on>
+            <sys_id>8aaf0557838722101ffc71a6feaad32e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Event Information" display_value="Event Information" name="x_1539926_event_ma_event" sys_domain="global" view="4eafc157838722101ffc71a6feaad3ab">caafc157838722101ffc71a6feaad3af</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-08-04 08:06:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_event_date</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-08-04 08:06:39</sys_created_on>
+            <sys_id>02af0557838722101ffc71a6feaad32f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Event Information" display_value="Event Information" name="x_1539926_event_ma_event" sys_domain="global" view="4eafc157838722101ffc71a6feaad3ab">caafc157838722101ffc71a6feaad3af</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-08-04 08:06:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_event_location</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-08-04 08:06:39</sys_created_on>
+            <sys_id>86af0557838722101ffc71a6feaad32f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Event Information" display_value="Event Information" name="x_1539926_event_ma_event" sys_domain="global" view="4eafc157838722101ffc71a6feaad3ab">caafc157838722101ffc71a6feaad3af</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-08-04 08:06:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_status</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-08-04 08:06:39</sys_created_on>
+            <sys_id>0eaf0557838722101ffc71a6feaad32f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Event Information" display_value="Event Information" name="x_1539926_event_ma_event" sys_domain="global" view="4eafc157838722101ffc71a6feaad3ab">caafc157838722101ffc71a6feaad3af</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-08-04 08:06:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Event Information</caption>
+            <header>false</header>
+            <name>x_1539926_event_ma_event</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-08-04 08:06:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>caafc157838722101ffc71a6feaad3af</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1539926_event_ma_event</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Event Management" source="x_1539926_event_ma">5cdff013834722101ffc71a6feaad328</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Event Management">5cdff013834722101ffc71a6feaad328</sys_scope>
+            <sys_update_name>sys_ui_section_caafc157838722101ffc71a6feaad3af</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-08-04 08:06:38</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Coordinator View" name="Coordinator_View">4eafc157838722101ffc71a6feaad3ab</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>
