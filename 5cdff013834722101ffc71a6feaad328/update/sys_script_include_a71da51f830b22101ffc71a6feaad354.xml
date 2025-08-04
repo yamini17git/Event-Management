@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1539926_event_ma.fetch_event_details_client</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>fetch_event_details_client</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var fetch_event_details_client = Class.create();
+fetch_event_details_client.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	fetchEventDetails:function(){
+	var eventId = this.getParameter('sysparm_event_id');
+	var grEvent = new GlideRecord('x_1790002_event_ma_event_record');
+	if(grEvent.get(eventId))
+	{
+		return JSON.stringify({
+			name: grEvent.getDisplayValue('event_name'),
+			date: grEvent.getDisplayValue('event_date'),
+			status: grEvent.getDisplayValue('status')
+		});
+	}
+	return '';
+	},
+
+    type: 'fetch_event_details_client'
+}
+
+);]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 10:37:30</sys_created_on>
+        <sys_id>a71da51f830b22101ffc71a6feaad354</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>fetch_event_details_client</sys_name>
+        <sys_package display_value="Event Management" source="x_1539926_event_ma">5cdff013834722101ffc71a6feaad328</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Event Management">5cdff013834722101ffc71a6feaad328</sys_scope>
+        <sys_update_name>sys_script_include_a71da51f830b22101ffc71a6feaad354</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-04 10:37:30</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>a71da51f830b22101ffc71a6feaad354</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 10:37:30</sys_created_on>
+        <sys_id>f3223193834b22101ffc71a6feaad3fe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-04 10:37:30</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
