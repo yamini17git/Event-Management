@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_email_template">
+    <sysevent_email_template action="INSERT_OR_UPDATE">
+        <collection>x_1539926_event_ma_event</collection>
+        <email_layout/>
+        <message/>
+        <message_html><![CDATA[<p>Hello,</p>
+<p>&nbsp;</p>
+<p>A new event is scheduled.</p>
+<p>ID: ${number}</p>
+<p>Event Name: ${x_event_name}</p>
+<p>Event Date: ${x_event_date}</p>
+<p>Event Location: ${x_event_location}</p>
+<p>Status: ${x_status}</p>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>New event scheduling</name>
+        <sms_alternate/>
+        <subject>New event scheduled</subject>
+        <sys_class_name>sysevent_email_template</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 12:42:26</sys_created_on>
+        <sys_id>cffd0e1783cb22101ffc71a6feaad3f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>New event scheduling</sys_name>
+        <sys_package display_value="Event Management" source="x_1539926_event_ma">5cdff013834722101ffc71a6feaad328</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management">5cdff013834722101ffc71a6feaad328</sys_scope>
+        <sys_update_name>sysevent_email_template_cffd0e1783cb22101ffc71a6feaad3f1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-04 12:42:26</sys_updated_on>
+        <sys_version>2</sys_version>
+    </sysevent_email_template>
+</record_update>

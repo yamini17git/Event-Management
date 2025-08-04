@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="x_is_vip" label="Is VIP" language="en" table="x_1539926_event_ma_event">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>x_is_vip</element>
+            <help/>
+            <hint/>
+            <label>Is VIP</label>
+            <language>en</language>
+            <name>x_1539926_event_ma_event</name>
+            <plural>Is VIPs</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-08-04 11:39:23</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Is VIP</sys_name>
+            <sys_package display_value="Event Management" source="x_1539926_event_ma">5cdff013834722101ffc71a6feaad328</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Event Management">5cdff013834722101ffc71a6feaad328</sys_scope>
+            <sys_update_name>sys_documentation_x_1539926_event_ma_event_x_is_vip_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-08-04 11:39:23</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
