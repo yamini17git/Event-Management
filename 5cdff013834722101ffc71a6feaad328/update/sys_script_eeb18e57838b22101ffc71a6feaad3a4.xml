@@ -15,12 +15,12 @@
         <condition/>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition table="x_1539926_event_ma_event">x_status=scheduled^EQ<item display_value="Scheduled" endquery="false" field="x_status" goto="false" newquery="false" operator="=" or="false" value="scheduled"/>
+        <filter_condition table="x_1539926_event_ma_event">x_is_vip=true^EQ<item endquery="false" field="x_is_vip" goto="false" newquery="false" operator="=" or="false" value="true"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter_condition>
         <is_rest>false</is_rest>
         <message/>
-        <name>Notify assigned planner</name>
+        <name> priority High event is vip</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -32,36 +32,35 @@
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 
 	// Add your code here
-	gs.eventQueue("x_1539926_event_ma.com.notify.planner", current);
 
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-08-04 11:22:38</sys_created_on>
+        <sys_created_on>2025-08-04 11:47:18</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>43cbb55f834b22101ffc71a6feaad323</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>Notify assigned planner</sys_name>
+        <sys_id>eeb18e57838b22101ffc71a6feaad3a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name> priority High event is vip</sys_name>
         <sys_overrides/>
         <sys_package display_value="Event Management" source="x_1539926_event_ma">5cdff013834722101ffc71a6feaad328</sys_package>
         <sys_policy/>
         <sys_scope display_value="Event Management">5cdff013834722101ffc71a6feaad328</sys_scope>
-        <sys_update_name>sys_script_43cbb55f834b22101ffc71a6feaad323</sys_update_name>
+        <sys_update_name>sys_script_eeb18e57838b22101ffc71a6feaad3a4</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-08-04 13:33:22</sys_updated_on>
-        <template/>
-        <when>after</when>
+        <sys_updated_on>2025-08-04 11:47:18</sys_updated_on>
+        <template>priority=2^EQ</template>
+        <when>before</when>
     </sys_script>
-    <sys_translated_text action="delete_multiple" query="documentkey=43cbb55f834b22101ffc71a6feaad323"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=eeb18e57838b22101ffc71a6feaad3a4"/>
     <sys_es_latest_script action="INSERT_OR_UPDATE">
-        <id>43cbb55f834b22101ffc71a6feaad323</id>
+        <id>eeb18e57838b22101ffc71a6feaad3a4</id>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-08-04 11:22:38</sys_created_on>
-        <sys_id>cd8c7d9b834b22101ffc71a6feaad395</sys_id>
+        <sys_created_on>2025-08-04 11:47:17</sys_created_on>
+        <sys_id>9622ca57838b22101ffc71a6feaad359</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-08-04 11:22:38</sys_updated_on>
+        <sys_updated_on>2025-08-04 11:47:17</sys_updated_on>
         <table>sys_script</table>
         <use_es_latest>true</use_es_latest>
     </sys_es_latest_script>

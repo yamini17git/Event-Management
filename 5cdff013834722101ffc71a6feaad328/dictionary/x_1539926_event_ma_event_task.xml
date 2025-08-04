@@ -6,8 +6,10 @@
                 <element inactive_on_update="false" label="Cancelled" sequence="3" value="cancelled"/>
                 <element inactive_on_update="false" label="In Progress" sequence="1" value="in progress"/>
                 <element inactive_on_update="false" label="Not Started" sequence="0" value="not started"/>
+                <element inactive_on_update="false" label="Overdue" sequence="4" value="overdue"/>
             </choice>
         </element>
+        <element label="Is completed" max_length="40" name="x_is_completed" type="boolean"/>
         <element attributes="edge_encryption_enabled=true" label="Task Name" max_length="100" name="x_task_name" type="string"/>
         <element attributes="encode_utf8=false" label="Event ID" max_length="32" name="x_event_id" reference="x_1539926_event_ma_event" type="reference"/>
         <element attributes="edge_encryption_enabled=true" label="Due Date" max_length="40" name="x_due_date" type="glide_date_time"/>

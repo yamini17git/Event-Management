@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="9a64425b838b22101ffc71a6feaad3bd" extends="task" label="expense" max_length="40" name="x_1539926_event_ma_expense" type="collection">
+        <element attributes="encode_utf8=false" label="Budget ID" max_length="32" name="x_budget_id" reference="x_1539926_event_ma_budget" type="reference"/>
+        <element attributes="omit_sys_original=true" label="Amount" max_length="20" name="x_amount" type="currency"/>
+        <element attributes="encode_utf8=false" label="Event ID" max_length="32" name="x_event_id" reference="x_1539926_event_ma_event" type="reference"/>
+    </element>
+</database>
