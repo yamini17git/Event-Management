@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Vendor Details" section_id="0c45155f838722101ffc71a6feaad3c7" sys_domain="global" table="x_1539926_event_ma_vendor" version="3" view="Coordinator_View">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>number</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-08-04 08:31:05</sys_created_on>
+            <sys_id>c045555f838722101ffc71a6feaad350</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Vendor Details" display_value="Vendor Details" name="x_1539926_event_ma_vendor" sys_domain="global" view="4eafc157838722101ffc71a6feaad3ab">0c45155f838722101ffc71a6feaad3c7</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-08-04 08:31:05</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_vendor_name</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-08-04 08:31:05</sys_created_on>
+            <sys_id>4845555f838722101ffc71a6feaad350</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Vendor Details" display_value="Vendor Details" name="x_1539926_event_ma_vendor" sys_domain="global" view="4eafc157838722101ffc71a6feaad3ab">0c45155f838722101ffc71a6feaad3c7</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-08-04 08:31:05</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_conatct_person</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-08-04 08:31:05</sys_created_on>
+            <sys_id>cc45555f838722101ffc71a6feaad350</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Vendor Details" display_value="Vendor Details" name="x_1539926_event_ma_vendor" sys_domain="global" view="4eafc157838722101ffc71a6feaad3ab">0c45155f838722101ffc71a6feaad3c7</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-08-04 08:31:05</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_email</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-08-04 08:31:05</sys_created_on>
+            <sys_id>4445555f838722101ffc71a6feaad351</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Vendor Details" display_value="Vendor Details" name="x_1539926_event_ma_vendor" sys_domain="global" view="4eafc157838722101ffc71a6feaad3ab">0c45155f838722101ffc71a6feaad3c7</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-08-04 08:31:05</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>contact_number</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-08-04 08:31:05</sys_created_on>
+            <sys_id>c845555f838722101ffc71a6feaad351</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Vendor Details" display_value="Vendor Details" name="x_1539926_event_ma_vendor" sys_domain="global" view="4eafc157838722101ffc71a6feaad3ab">0c45155f838722101ffc71a6feaad3c7</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-08-04 08:31:05</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_services_provideed</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-08-04 08:31:05</sys_created_on>
+            <sys_id>4045555f838722101ffc71a6feaad352</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Vendor Details" display_value="Vendor Details" name="x_1539926_event_ma_vendor" sys_domain="global" view="4eafc157838722101ffc71a6feaad3ab">0c45155f838722101ffc71a6feaad3c7</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-08-04 08:31:05</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Vendor Details</caption>
+            <header>false</header>
+            <name>x_1539926_event_ma_vendor</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-08-04 08:31:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0c45155f838722101ffc71a6feaad3c7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1539926_event_ma_vendor</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Event Management" source="x_1539926_event_ma">5cdff013834722101ffc71a6feaad328</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Event Management">5cdff013834722101ffc71a6feaad328</sys_scope>
+            <sys_update_name>sys_ui_section_0c45155f838722101ffc71a6feaad3c7</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-08-04 08:31:04</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Coordinator View" name="Coordinator_View">4eafc157838722101ffc71a6feaad3ab</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

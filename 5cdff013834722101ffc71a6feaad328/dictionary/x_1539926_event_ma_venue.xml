@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="be39dd9383c722101ffc71a6feaad3a3" extends="task" label="Venue" max_length="40" name="x_1539926_event_ma_venue" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Venue Name" max_length="200" name="x_venue_name" type="string"/>
+        <element label="Contact Number" max_length="40" name="contact_number" type="phone_number_e164"/>
+        <element attributes="edge_encryption_enabled=true" label="Contact Person" max_length="200" name="x_contact_person" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Location" max_length="200" name="x_location" type="string"/>
+        <element label="Capacity" max_length="40" name="x_capacity" type="integer"/>
+    </element>
+</database>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="15b311db838722101ffc71a6feaad332" extends="task" label="Vendor" max_length="40" name="x_1539926_event_ma_vendor" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Email" max_length="200" name="x_email" type="string"/>
+        <element label="Contact Number" max_length="40" name="contact_number" type="phone_number_e164"/>
+        <element attributes="edge_encryption_enabled=true" label="Vendor Name" max_length="100" name="x_vendor_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Services Provided" max_length="500" name="x_services_provideed" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Contact Person" max_length="100" name="x_conatct_person" type="string"/>
+    </element>
+</database>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="99eb599783c722101ffc71a6feaad302" sys_domain="global" table="x_1539926_event_ma_schedule" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-08-04 09:00:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>95eb599783c722101ffc71a6feaad305</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1539926_event_ma_schedule" name="x_1539926_event_ma_schedule" sys_domain="global" view="4eafc157838722101ffc71a6feaad3ab">99eb599783c722101ffc71a6feaad302</sys_ui_form>
+            <sys_ui_section caption="Schedule Details" display_value="Schedule Details" name="x_1539926_event_ma_schedule" sys_domain="global" view="4eafc157838722101ffc71a6feaad3ab">95ebd59783c722101ffc71a6feaad3bd</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-08-04 09:00:07</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-08-04 09:00:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>51eb599783c722101ffc71a6feaad306</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1539926_event_ma_schedule" name="x_1539926_event_ma_schedule" sys_domain="global" view="4eafc157838722101ffc71a6feaad3ab">99eb599783c722101ffc71a6feaad302</sys_ui_form>
+            <sys_ui_section caption="Activity/Notes" display_value="Activity/Notes" name="x_1539926_event_ma_schedule" sys_domain="global" view="4eafc157838722101ffc71a6feaad3ab">15ebd59783c722101ffc71a6feaad3be</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-08-04 09:00:07</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_1539926_event_ma_schedule</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-08-04 09:00:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>99eb599783c722101ffc71a6feaad302</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1539926_event_ma_schedule</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Event Management" source="x_1539926_event_ma">5cdff013834722101ffc71a6feaad328</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Event Management">5cdff013834722101ffc71a6feaad328</sys_scope>
+            <sys_update_name>sys_ui_form_sections_99eb599783c722101ffc71a6feaad302</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-08-04 09:00:06</sys_updated_on>
+            <sys_user/>
+            <view display_value="Coordinator View" name="Coordinator_View">4eafc157838722101ffc71a6feaad3ab</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="8f2cd1d783c722101ffc71a6feaad3b9" extends="task" label="Feedback" max_length="40" name="x_1539926_event_ma_feedback" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Comments" max_length="1000" name="x_comments" type="string"/>
+        <element attributes="encode_utf8=false" label="Attendee ID" max_length="32" name="x_attendee_id" reference="x_1539926_event_ma_attendee" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Ratings" max_length="40" name="x_ratings" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Poor" sequence="3" value="poor"/>
+                <element inactive_on_update="false" label="Average" sequence="2" value="average"/>
+                <element inactive_on_update="false" label="Excellent" sequence="0" value="excellent"/>
+                <element inactive_on_update="false" label="Good" sequence="1" value="good"/>
+            </choice>
+        </element>
+        <element attributes="encode_utf8=false" label="Event ID" max_length="32" name="x_event_id" reference="x_1539926_event_ma_event" type="reference"/>
+    </element>
+</database>
