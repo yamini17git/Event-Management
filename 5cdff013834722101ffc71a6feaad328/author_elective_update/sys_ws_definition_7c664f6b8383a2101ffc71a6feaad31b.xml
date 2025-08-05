@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_definition">
+    <sys_ws_definition action="DELETE">
+        <active>true</active>
+        <base_uri>/api/x_1539926_event_ma/task_api</base_uri>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_version>v1</default_version>
+        <doc_link/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <is_versioned>true</is_versioned>
+        <name>Task API</name>
+        <namespace>x_1539926_event_ma</namespace>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <service_id>task_api</service_id>
+        <short_description/>
+        <sys_class_name>sys_ws_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 11:24:18</sys_created_on>
+        <sys_id>7c664f6b8383a2101ffc71a6feaad31b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Task API</sys_name>
+        <sys_package display_value="Event Management" source="x_1539926_event_ma">5cdff013834722101ffc71a6feaad328</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management">5cdff013834722101ffc71a6feaad328</sys_scope>
+        <sys_update_name>sys_ws_definition_7c664f6b8383a2101ffc71a6feaad31b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 11:24:41</sys_updated_on>
+    </sys_ws_definition>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Event Management">5cdff013834722101ffc71a6feaad328</application>
+        <file_path/>
+        <instance_id>1a250c9eeb6daa5c56eafddacad0cd9a</instance_id>
+        <instance_name>dev348339</instance_name>
+        <name>sys_ws_definition_7c664f6b8383a2101ffc71a6feaad31b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_definition"><sys_ws_definition action="INSERT_OR_UPDATE"><active>true</active><base_uri>/api/x_1539926_event_ma/task_api</base_uri><consumes>application/json,application/xml,text/xml</consumes><consumes_customized>false</consumes_customized><default_version>v1</default_version><doc_link/><enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl><is_versioned>true</is_versioned><name>Task API</name><namespace>x_1539926_event_ma</namespace><produces>application/json,application/xml,text/xml</produces><produces_customized>false</produces_customized><service_id>task_api</service_id><short_description/><sys_class_name>sys_ws_definition</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-08-05 11:24:18</sys_created_on><sys_id>7c664f6b8383a2101ffc71a6feaad31b</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Task API</sys_name><sys_package display_value="Event Management" source="x_1539926_event_ma">5cdff013834722101ffc71a6feaad328</sys_package><sys_policy/><sys_scope display_value="Event Management">5cdff013834722101ffc71a6feaad328</sys_scope><sys_update_name>sys_ws_definition_7c664f6b8383a2101ffc71a6feaad31b</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-08-05 11:24:41</sys_updated_on></sys_ws_definition></record_update>]]></payload>
+        <payload_hash>1623238437</payload_hash>
+        <record_name>Task API</record_name>
+        <reverted_from/>
+        <source>81763a17838f22101ffc71a6feaad31b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 11:24:41</sys_created_on>
+        <sys_id>74968bab8383a2101ffc71a6feaad38b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19879f9f62c0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 11:24:41</sys_updated_on>
+        <type>Scripted REST API</type>
+        <update_guid>f8968babed83a2109502d1619b733d8a</update_guid>
+        <update_guid_history>f8968babed83a2109502d1619b733d8a:1623238437,03768be32b83a210818d12c106f62e5c:697259279</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 11:34:05</sys_created_on>
+        <sys_db_object display_value="" name="sys_ws_definition">sys_ws_definition</sys_db_object>
+        <sys_id>9e11c4e0a1e04878af60e49601c48240</sys_id>
+        <sys_metadata>7c664f6b8383a2101ffc71a6feaad31b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Task API</sys_name>
+        <sys_package display_value="Event Management" source="x_1539926_event_ma">5cdff013834722101ffc71a6feaad328</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Event Management">5cdff013834722101ffc71a6feaad328</sys_scope>
+        <sys_scope_delete display_value="">3584b1f0a8cd4a568d9a994f9584b2d9</sys_scope_delete>
+        <sys_update_name>sys_ws_definition_7c664f6b8383a2101ffc71a6feaad31b</sys_update_name>
+        <sys_update_version display_value="sys_ws_definition_7c664f6b8383a2101ffc71a6feaad31b">74968bab8383a2101ffc71a6feaad38b</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 11:34:05</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

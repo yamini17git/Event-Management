@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element audit="true" db_object_id="ea55195f838722101ffc71a6feaad310" extends="task" label="Budget" max_length="40" name="x_1539926_event_ma_budget" type="collection">
-        <element attributes="omit_sys_original=true" label="Amount Left" max_length="20" name="x_amount_left" type="currency"/>
-        <element attributes="omit_sys_original=true" label="Total Budget" max_length="20" name="x_total_budget" type="currency"/>
-        <element attributes="omit_sys_original=true" label="Amount Spent" max_length="20" name="x_amount_spent" type="currency"/>
+        <element label="Approved" max_length="40" name="u_approved" type="boolean"/>
+        <element attributes="omit_sys_original=true" audit="true" label="Amount Left" max_length="20" name="x_amount_left" type="currency"/>
+        <element attributes="omit_sys_original=true" audit="true" label="Total Budget" max_length="20" name="x_total_budget" type="currency"/>
+        <element attributes="omit_sys_original=true" audit="true" label="Amount Spent" max_length="20" name="x_amount_spent" type="currency"/>
         <element attributes="encode_utf8=false" label="Event ID" max_length="32" name="x_event_id" reference="x_1539926_event_ma_event" type="reference"/>
     </element>
 </database>

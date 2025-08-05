@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1539926_event_ma.BudgetUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>BudgetUtils</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var BudgetUtils = Class.create();
+BudgetUtils.prototype = {
+    initialize: function() {
+    },
+
+    
+    getTotalBudget: function(eventNumber) {
+        var eventGR = new GlideRecord('x_1539926_event_ma_event'); 
+        eventGR.addQuery('number', eventNumber);
+        eventGR.query();
+
+        if (!eventGR.next()) return 0;
+
+        var total = 0;
+        var budgetGR = new GlideRecord('x_1539926_event_ma_budget'); 
+        budgetGR.addQuery('x_event_id', eventGR.getUniqueValue()); 
+        budgetGR.query();
+
+        while (budgetGR.next()) {
+            total += parseFloat(budgetGR.getValue('x_total_budget') || 0);
+        }
+
+        return total;
+    },
+
+    
+    isBudgetApproved: function(budgetNumber) {
+        var gr = new GlideRecord('x_1539926_event_ma_budget'); // Replace with your budget table
+        gr.addQuery('number', budgetNumber);
+        gr.query();
+
+        if (gr.next()) {
+        return gr.getValue('x_approved') == 'true' || gr.approval_status == true;
+    }
+
+        return false;
+    },
+
+  
+    getBudgetDetailsByEvent: function(eventNumber) {
+        var eventGR = new GlideRecord('x_1539926_event_ma_event'); 
+        eventGR.addQuery('number', eventNumber);
+        eventGR.query();
+
+        if (!eventGR.next()) return [];
+
+        var details = [];
+        var gr = new GlideRecord('x_1539926_event_ma_budget');
+        gr.addQuery('x_event_id', eventGR.getUniqueValue());
+        gr.query();
+
+        while (gr.next()) {
+            details.push({
+                budgetNumber: gr.getValue('number'),
+                allocated: gr.getValue('x_total_budget'),
+                spent: gr.getValue('x_amount_spent'),
+                approved: gr.getValue('x_approved')
+            });
+        }
+
+        return details;
+    },
+
+    type: 'BudgetUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 07:57:19</sys_created_on>
+        <sys_id>cbf55eaf838f62101ffc71a6feaad3b2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>BudgetUtils</sys_name>
+        <sys_package display_value="Event Management" source="x_1539926_event_ma">5cdff013834722101ffc71a6feaad328</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Event Management">5cdff013834722101ffc71a6feaad328</sys_scope>
+        <sys_update_name>sys_script_include_cbf55eaf838f62101ffc71a6feaad3b2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 07:57:19</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>cbf55eaf838f62101ffc71a6feaad3b2</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 07:57:18</sys_created_on>
+        <sys_id>47175eef838f62101ffc71a6feaad38c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 07:57:18</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

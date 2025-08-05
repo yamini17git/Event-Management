@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_version">
+    <sys_ws_version action="DELETE">
+        <active>true</active>
+        <deprecated>false</deprecated>
+        <is_default>true</is_default>
+        <short_description/>
+        <sys_class_name>sys_ws_version</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 11:24:41</sys_created_on>
+        <sys_id>30968bab8383a2101ffc71a6feaad382</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>v1</sys_name>
+        <sys_package display_value="Event Management" source="x_1539926_event_ma">5cdff013834722101ffc71a6feaad328</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management">5cdff013834722101ffc71a6feaad328</sys_scope>
+        <sys_update_name>sys_ws_version_30968bab8383a2101ffc71a6feaad382</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 11:24:41</sys_updated_on>
+        <version>1</version>
+        <version_id>v1</version_id>
+        <web_service_definition display_value="Task API">7c664f6b8383a2101ffc71a6feaad31b</web_service_definition>
+    </sys_ws_version>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Event Management">5cdff013834722101ffc71a6feaad328</application>
+        <file_path/>
+        <instance_id>1a250c9eeb6daa5c56eafddacad0cd9a</instance_id>
+        <instance_name>dev348339</instance_name>
+        <name>sys_ws_version_30968bab8383a2101ffc71a6feaad382</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_version"><sys_ws_version action="INSERT_OR_UPDATE"><active>true</active><deprecated>false</deprecated><is_default>true</is_default><short_description/><sys_class_name>sys_ws_version</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-08-05 11:24:41</sys_created_on><sys_id>30968bab8383a2101ffc71a6feaad382</sys_id><sys_mod_count>1</sys_mod_count><sys_name>v1</sys_name><sys_package display_value="Event Management" source="x_1539926_event_ma">5cdff013834722101ffc71a6feaad328</sys_package><sys_policy/><sys_scope display_value="Event Management">5cdff013834722101ffc71a6feaad328</sys_scope><sys_update_name>sys_ws_version_30968bab8383a2101ffc71a6feaad382</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-08-05 11:24:41</sys_updated_on><version>1</version><version_id>v1</version_id><web_service_definition display_value="Task API">7c664f6b8383a2101ffc71a6feaad31b</web_service_definition></sys_ws_version></record_update>]]></payload>
+        <payload_hash>-886912050</payload_hash>
+        <record_name>v1</record_name>
+        <reverted_from/>
+        <source>81763a17838f22101ffc71a6feaad31b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 11:24:41</sys_created_on>
+        <sys_id>bc968bab8383a2101ffc71a6feaad387</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19879f9f6020000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 11:24:41</sys_updated_on>
+        <type>Scripted REST Version</type>
+        <update_guid>34968babe883a210383db99d99c6da87</update_guid>
+        <update_guid_history>34968babe883a210383db99d99c6da87:-886912050,f0968bab3483a21080362cec81236384:-1541102513</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 11:34:04</sys_created_on>
+        <sys_db_object display_value="" name="sys_ws_version">sys_ws_version</sys_db_object>
+        <sys_id>b620e008086246709b5e9664eb863599</sys_id>
+        <sys_metadata>30968bab8383a2101ffc71a6feaad382</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>v1</sys_name>
+        <sys_package display_value="Event Management" source="x_1539926_event_ma">5cdff013834722101ffc71a6feaad328</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Event Management">5cdff013834722101ffc71a6feaad328</sys_scope>
+        <sys_scope_delete display_value="">3584b1f0a8cd4a568d9a994f9584b2d9</sys_scope_delete>
+        <sys_update_name>sys_ws_version_30968bab8383a2101ffc71a6feaad382</sys_update_name>
+        <sys_update_version display_value="sys_ws_version_30968bab8383a2101ffc71a6feaad382">bc968bab8383a2101ffc71a6feaad387</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 11:34:04</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
