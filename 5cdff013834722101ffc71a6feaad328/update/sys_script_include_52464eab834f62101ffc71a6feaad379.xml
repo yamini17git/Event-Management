@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1539926_event_ma.EventUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>EventUtils</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var EventUtils = Class.create();
+EventUtils.prototype = {
+    initialize: function(eventNumber) {
+        this.eventNumber = eventNumber;
+    },
+
+    
+    _getEventRecord: function() {
+        var gr = new GlideRecord('x_1539926_event_ma_event'); 
+        gr.addQuery('number', this.eventNumber);
+        gr.query();
+        if (gr.next()) {
+            return gr;
+        }
+        return null;
+    },
+
+    
+    getEventDetails: function() {
+        return this._getEventRecord();
+    },
+
+    
+    isVIP: function() {
+        var gr = this._getEventRecord();
+        if (gr) {
+            return gr.getValue('x_is_vip') == 'true' || gr.getValue('x_is_vip') == '1';
+        }
+        return false;
+    },
+
+    
+    getRemainingBudget: function() {
+        var eventGR = this._getEventRecord();
+        if (!eventGR) return 0;
+
+        var gr = new GlideRecord('x_1539926_event_ma_budget');
+        gr.addQuery('x_event_id', eventGR.getUniqueValue());
+        gr.query();
+
+        var totalBudget = 0;
+        var totalSpent = 0;
+
+        while (gr.next()) {
+            totalBudget += parseFloat(gr.getValue('x_total_budget') || 0);
+            totalSpent += parseFloat(gr.getValue('x_amount_spent') || 0);
+        }
+
+        return totalBudget - totalSpent;
+    },
+
+    // Fetch event tasks
+   getEventTasks: function() {
+        var eventGR = this._getEventRecord();
+        if (!eventGR) return [];
+
+        var tasks = [];
+        var gr = new GlideRecord('x_1539926_event_ma_event_task'); 
+        gr.addQuery('x_event_id', eventGR.getUniqueValue());
+        gr.query();
+
+        while (gr.next()) {
+            tasks.push({
+                number: gr.getDisplayValue('number'),
+                task_name: gr.getDisplayValue('x_task_name'),
+                status: gr.getDisplayValue('x_status')
+            });
+        }
+
+        return tasks;
+    },
+
+    // Fetch event attendees
+   getEventAttendees: function() {
+        var eventGR = this._getEventRecord();
+        if (!eventGR) return [];
+
+        var attendees = [];
+        var gr = new GlideRecord('x_1539926_event_ma_attendee');
+        gr.addQuery('x_event_id', eventGR.getUniqueValue());
+        gr.query();
+
+        while (gr.next()) {
+            attendees.push({
+                attendee: gr.getDisplayValue('number')
+            });
+        }
+
+        return attendees;
+    },
+
+    // Fetch event vendors
+   getEventVendors: function() {
+        var eventGR = this._getEventRecord();
+        if (!eventGR) return [];
+
+        var vendors = [];
+        var gr = new GlideRecord('x_1539926_event_ma_vendor'); 
+        gr.addQuery('x_event_id', eventGR.getUniqueValue());
+        gr.query();
+
+        while (gr.next()) {
+            vendors.push({
+                vendor: gr.getDisplayValue('number')
+            });
+        }
+
+        return vendors;
+    },
+
+    // Fetch event budget details
+    getEventBudgetDetails: function() {
+        var eventGR = this._getEventRecord();
+        if (!eventGR) return [];
+
+        var gr = new GlideRecord('x_1539926_event_ma_budget');
+        gr.addQuery('x_event_id', eventGR.getUniqueValue());
+        gr.query();
+
+        var budgets = [];
+        while (gr.next()) {
+            budgets.push({
+				budget_id: gr.getDisplayValue("number"),
+                allocated: gr.getValue('x_total_budget'),
+                spent: gr.getValue('x_amount_spent')
+            });
+        }
+
+        return budgets;
+    },
+
+    // Fetch event feedback
+    getEventFeedback: function() {
+        var eventGR = this._getEventRecord();
+        if (!eventGR) return [];
+
+        var feedbackList = [];
+        var gr = new GlideRecord('x_1539926_event_ma_feedback'); // Replace with your feedback table
+        gr.addQuery('x_event_id', eventGR.getUniqueValue());
+        gr.query();
+
+        while (gr.next()) {
+            feedbackList.push({
+                rating: gr.getValue('x_ratings'),
+                comments: gr.getValue('x_comments')
+            });
+        }
+
+        return feedbackList;
+    },
+
+    type: 'EventUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 06:56:37</sys_created_on>
+        <sys_id>52464eab834f62101ffc71a6feaad379</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>EventUtils</sys_name>
+        <sys_package display_value="Event Management" source="x_1539926_event_ma">5cdff013834722101ffc71a6feaad328</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Event Management">5cdff013834722101ffc71a6feaad328</sys_scope>
+        <sys_update_name>sys_script_include_52464eab834f62101ffc71a6feaad379</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 06:56:37</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>52464eab834f62101ffc71a6feaad379</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 06:56:36</sys_created_on>
+        <sys_id>3539022f834f62101ffc71a6feaad3a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 06:56:36</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

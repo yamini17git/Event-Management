@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1539926_event_ma.AttendeeUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>AttendeeUtils</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var AttendeeUtils = Class.create();
+AttendeeUtils.prototype = {
+    initialize: function() {
+    },
+
+	isRegistered: function(attendeeNumber) {
+        var gr = new GlideRecord('x_1539926_event_ma_attendee');
+        gr.addQuery('number', attendeeNumber);
+        gr.query();
+        return gr.next(); // true if record exists
+    },
+
+	getAttendeesByEvent: function(eventNumber) {
+    
+        var eventGR = new GlideRecord('x_1539926_event_ma_event');
+        eventGR.addQuery('number', eventNumber);
+        eventGR.query();
+
+        if (!eventGR.next()) {
+            return []; // event not found
+        }
+
+        var attendees = [];
+        var gr = new GlideRecord('x_1539926_event_ma_attendee');
+        gr.addQuery('x_event_id', eventGR.getUniqueValue());
+        gr.query();
+
+        while (gr.next()) {
+            attendees.push({
+                number: gr.getValue('number'),
+                name: gr.getValue('x_first_name'),
+                email: gr.getValue('x_email')
+            });
+        }
+
+        return attendees;
+    },
+
+	attendeeDetails : function(attID)
+	{
+		var grAtt = new GlideRecord('x_1539926_event_ma_attendee');
+		grAtt.addQuery('number',attID);
+		grAtt.query();
+		if(grAtt.next())
+		{
+			return {
+				email:grAtt.getValue('x_email'),
+				name:grAtt.getValue('x_first_name')
+			}
+		}
+	},
+
+
+    type: 'AttendeeUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 07:39:16</sys_created_on>
+        <sys_id>5c029ae7838f62101ffc71a6feaad39d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>AttendeeUtils</sys_name>
+        <sys_package display_value="Event Management" source="x_1539926_event_ma">5cdff013834722101ffc71a6feaad328</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Event Management">5cdff013834722101ffc71a6feaad328</sys_scope>
+        <sys_update_name>sys_script_include_5c029ae7838f62101ffc71a6feaad39d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 07:39:16</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>5c029ae7838f62101ffc71a6feaad39d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 07:39:16</sys_created_on>
+        <sys_id>7af25ae7838f62101ffc71a6feaad3f9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 07:39:16</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

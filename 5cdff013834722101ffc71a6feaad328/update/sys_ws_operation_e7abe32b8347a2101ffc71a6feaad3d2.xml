@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri>/api/x_1539926_event_ma/create_event/create</default_operation_uri>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>POST</http_method>
+        <name>create_event</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+    // implement resource here
+
+		var requestBody = request.body.data;
+		
+	var _eventGR = new GlideRecord('x_1539926_event_ma_event');
+	_eventGR.initialize();
+	
+	_eventGR.x_event_name = requestBody.x_event_name;
+	_eventGR.x_location = requestBody.x_location;
+	_eventGR.x_conatct_person = requestBody.x_contact_person;
+
+
+	var sysId = _eventGR.insert();
+
+	if(!sysId) {
+		response.setStatus(500);
+		return { error: 'Failed to create patient record' };
+	}
+
+	response.setStatus(201);
+    return {
+        message: 'Event record created successfully',
+        sys_id: sysId
+    };
+
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_1539926_event_ma/v1/create_event/create</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/create</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>false</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 14:08:17</sys_created_on>
+        <sys_id>e7abe32b8347a2101ffc71a6feaad3d2</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>create_event</sys_name>
+        <sys_package display_value="Event Management" source="x_1539926_event_ma">5cdff013834722101ffc71a6feaad328</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management">5cdff013834722101ffc71a6feaad328</sys_scope>
+        <sys_update_name>sys_ws_operation_e7abe32b8347a2101ffc71a6feaad3d2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 14:21:05</sys_updated_on>
+        <web_service_definition display_value="Create Event">64dae3e78347a2101ffc71a6feaad3ea</web_service_definition>
+        <web_service_version display_value="v1">1f5b23e78347a2101ffc71a6feaad314</web_service_version>
+    </sys_ws_operation>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>e7abe32b8347a2101ffc71a6feaad3d2</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 14:08:16</sys_created_on>
+        <sys_id>010c2f2b8347a2101ffc71a6feaad396</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 14:08:16</sys_updated_on>
+        <table>sys_ws_operation</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

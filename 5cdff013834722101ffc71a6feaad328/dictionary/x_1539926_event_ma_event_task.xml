@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element audit="true" db_object_id="a0e0dd97838722101ffc71a6feaad36d" extends="task" label="Event task" max_length="40" name="x_1539926_event_ma_event_task" type="collection">
-        <element attributes="edge_encryption_enabled=true" choice="1" label="Status" max_length="40" name="x_status" type="string">
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Reminder" max_length="40" name="x_reminder" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Not sent" sequence="1" value="not sent"/>
+                <element inactive_on_update="false" label="Sent" sequence="0" value="sent"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" audit="true" choice="1" label="Status" max_length="40" name="x_status" type="string">
             <choice>
                 <element inactive_on_update="false" label="Completed" sequence="2" value="completed"/>
                 <element inactive_on_update="false" label="Cancelled" sequence="3" value="cancelled"/>

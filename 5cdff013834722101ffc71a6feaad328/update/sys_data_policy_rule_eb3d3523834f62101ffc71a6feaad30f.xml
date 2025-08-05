@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_data_policy_rule">
+    <sys_data_policy_rule action="INSERT_OR_UPDATE">
+        <disabled>ignore</disabled>
+        <field>x_ratings</field>
+        <mandatory>true</mandatory>
+        <sys_class_name>sys_data_policy_rule</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 06:04:46</sys_created_on>
+        <sys_data_policy display_value="Rating field is mandatory when the feedback is submitted.">76fcb1ef830f62101ffc71a6feaad3e5</sys_data_policy>
+        <sys_id>eb3d3523834f62101ffc71a6feaad30f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_ratings</sys_name>
+        <sys_package display_value="Event Management" source="x_1539926_event_ma">5cdff013834722101ffc71a6feaad328</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management">5cdff013834722101ffc71a6feaad328</sys_scope>
+        <sys_update_name>sys_data_policy_rule_eb3d3523834f62101ffc71a6feaad30f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 06:04:46</sys_updated_on>
+        <table>x_1539926_event_ma_feedback</table>
+    </sys_data_policy_rule>
+</record_update>

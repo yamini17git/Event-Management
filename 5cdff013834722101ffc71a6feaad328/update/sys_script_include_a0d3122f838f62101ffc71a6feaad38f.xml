@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1539926_event_ma. FeedbackUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name> FeedbackUtils</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var FeedbackUtils = Class.create();
+FeedbackUtils.prototype = {
+    initialize: function() {
+    },
+    
+	getFeedbackById: function(feedbackId) {
+        var fbGR = new GlideRecord('x_1539926_event_ma_feedback');
+        if (fbGR.get(feedbackId)) {
+            return {
+                sys_id: fbGR.getUniqueValue(),
+                event: fbGR.getDisplayValue('x_event_id'),
+                rating: fbGR.getValue('x_ratings'),
+                comments: fbGR.getValue('x_comments'),
+            };
+        }
+        return null;
+    },
+
+isFeedbackPositive: function(feedbackId) {
+    var fbGR = new GlideRecord('x_1539926_event_ma_feedback');
+    if (fbGR.get(feedbackId)) {
+        var rating = fbGR.getValue('x_ratings') || '';
+        rating = rating.toLowerCase();
+
+        if (rating === 'good' || rating === 'excellent') {
+            return true;
+        }
+    }
+    return false;
+}
+,
+
+	getFeedbackByEvent: function(eventId) {
+        var feedbackList = [];
+        var fbGR = new GlideRecord('x_1539926_event_ma_feedback');
+        fbGR.addQuery('x_event_id.number', eventId);
+        fbGR.query();
+        while (fbGR.next()) {
+            feedbackList.push({
+                sys_id: fbGR.getUniqueValue(),
+                rating: fbGR.getValue('x_ratings'),
+                comments: fbGR.getValue('x_comments'),
+            });
+        }
+        return feedbackList;
+    },
+
+    type: 'FeedbackUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 07:47:52</sys_created_on>
+        <sys_id>a0d3122f838f62101ffc71a6feaad38f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name> FeedbackUtils</sys_name>
+        <sys_package display_value="Event Management" source="x_1539926_event_ma">5cdff013834722101ffc71a6feaad328</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Event Management">5cdff013834722101ffc71a6feaad328</sys_scope>
+        <sys_update_name>sys_script_include_a0d3122f838f62101ffc71a6feaad38f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 07:50:13</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>a0d3122f838f62101ffc71a6feaad38f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 07:47:52</sys_created_on>
+        <sys_id>b0f41aeb838f62101ffc71a6feaad3fd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 07:47:52</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
