@@ -4,6 +4,13 @@
         <element attributes="encode_utf8=false" label="Event Id" max_length="32" name="x_event_id" reference="x_1539926_event_ma_event" type="reference"/>
         <element label="Contact Number" max_length="40" name="contact_number" type="phone_number_e164"/>
         <element attributes="edge_encryption_enabled=true" label="First Name" max_length="100" name="x_first_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Status" max_length="40" name="x_status" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Attended" sequence="1" value="attended"/>
+                <element inactive_on_update="false" label="Not attended" sequence="2" value="not attended"/>
+                <element inactive_on_update="false" label="Registered" sequence="0" value="registered"/>
+            </choice>
+        </element>
         <element attributes="edge_encryption_enabled=true" label="Last Name" max_length="100" name="x_last_name" type="string"/>
     </element>
 </database>
