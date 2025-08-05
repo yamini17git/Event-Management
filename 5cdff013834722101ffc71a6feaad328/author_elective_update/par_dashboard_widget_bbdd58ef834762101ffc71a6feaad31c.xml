@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="DELETE">
+        <canvas display_value="">b7dd58ef834762101ffc71a6feaad310</canvas>
+        <component display_value="List - Simple">2b1c080881e05dc63b917044290b233f</component>
+        <component_props>{"table":"x_1539926_event_ma_vendor","columnPreferenceKey":"","fixedQuery":"","followFilters":true,"listTitle":"Vendor Details","columns":"number,x_event_id,x_vendor_name,x_services_provideed,x_conatct_person","query":"active=true","groupByField":null,"hideViewAll":false,"hideHighlightedValues":false,"showBorder":false,"bare":true,"highlightedValueConfigId":"","hideHighlightContent":false,"highlightContent":{"patterns":[],"color":""},"hideLinks":false,"nrlLandmark":true,"wordWrap":false,"overrideWordWrapUserPref":false,"maxCharLimit":4000,"hideEmptyStateImage":false,"hidePersonalization":false,"hideDotwalk":false,"hideColumnReorder":false,"hideRowSelector":false,"hideColumnGrouping":false,"hideColumnResizing":false,"hideColumnFiltering":false,"hideColumnSorting":false,"hideHeader":false,"hideTitle":false,"hideTitleRowCount":true,"hideLastRefreshedText":true,"hideRefreshButton":false,"hideInlineEditing":false,"isDashboard":true}</component_props>
+        <h>13</h>
+        <name>Vendor Details</name>
+        <stored_component/>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 23:07:36</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>bbdd58ef834762101ffc71a6feaad31c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Vendor Details</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Event Management" source="x_1539926_event_ma">5cdff013834722101ffc71a6feaad328</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management">5cdff013834722101ffc71a6feaad328</sys_scope>
+        <sys_update_name>par_dashboard_widget_bbdd58ef834762101ffc71a6feaad31c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-04 23:07:36</sys_updated_on>
+        <visualization/>
+        <w>48</w>
+        <widget_props/>
+        <x>0</x>
+        <y>37</y>
+    </par_dashboard_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Event Management">5cdff013834722101ffc71a6feaad328</application>
+        <file_path/>
+        <instance_id>1a250c9eeb6daa5c56eafddacad0cd9a</instance_id>
+        <instance_name>dev348339</instance_name>
+        <name>par_dashboard_widget_bbdd58ef834762101ffc71a6feaad31c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget"><par_dashboard_widget action="INSERT_OR_UPDATE"><canvas display_value="">b7dd58ef834762101ffc71a6feaad310</canvas><component display_value="List - Simple">2b1c080881e05dc63b917044290b233f</component><component_props>{"table":"x_1539926_event_ma_vendor","columnPreferenceKey":"","fixedQuery":"","followFilters":true,"listTitle":"Vendor Details","columns":"number,x_event_id,x_vendor_name,x_services_provideed,x_conatct_person","query":"active=true","groupByField":null,"hideViewAll":false,"hideHighlightedValues":false,"showBorder":false,"bare":true,"highlightedValueConfigId":"","hideHighlightContent":false,"highlightContent":{"patterns":[],"color":""},"hideLinks":false,"nrlLandmark":true,"wordWrap":false,"overrideWordWrapUserPref":false,"maxCharLimit":4000,"hideEmptyStateImage":false,"hidePersonalization":false,"hideDotwalk":false,"hideColumnReorder":false,"hideRowSelector":false,"hideColumnGrouping":false,"hideColumnResizing":false,"hideColumnFiltering":false,"hideColumnSorting":false,"hideHeader":false,"hideTitle":false,"hideTitleRowCount":true,"hideLastRefreshedText":true,"hideRefreshButton":false,"hideInlineEditing":false,"isDashboard":true}</component_props><h>13</h><name>Vendor Details</name><stored_component/><sys_class_name>par_dashboard_widget</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-08-04 23:07:36</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>bbdd58ef834762101ffc71a6feaad31c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Vendor Details</sys_name><sys_overrides/><sys_package display_value="Event Management" source="x_1539926_event_ma">5cdff013834722101ffc71a6feaad328</sys_package><sys_policy/><sys_scope display_value="Event Management">5cdff013834722101ffc71a6feaad328</sys_scope><sys_update_name>par_dashboard_widget_bbdd58ef834762101ffc71a6feaad31c</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-08-04 23:07:36</sys_updated_on><visualization/><w>48</w><widget_props/><x>0</x><y>37</y></par_dashboard_widget></record_update>]]></payload>
+        <payload_hash>-714869088</payload_hash>
+        <record_name>Vendor Details</record_name>
+        <reverted_from/>
+        <source>81763a17838f22101ffc71a6feaad31b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 23:07:36</sys_created_on>
+        <sys_id>77dd58ef834762101ffc71a6feaad31e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1987757262c0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-04 23:07:36</sys_updated_on>
+        <type>PAR Dashboard Widget</type>
+        <update_guid>7bdd58ef1d476210aa92fe66c876141d</update_guid>
+        <update_guid_history>7bdd58ef1d476210aa92fe66c876141d:-714869088</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Vendor Details">c4ed58ef834762101ffc71a6feaad338</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 23:07:37</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard_widget">par_dashboard_widget</sys_db_object>
+        <sys_id>036ed0e889fe4e00820954b6eae40000</sys_id>
+        <sys_metadata>bbdd58ef834762101ffc71a6feaad31c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Vendor Details</sys_name>
+        <sys_package display_value="Event Management" source="x_1539926_event_ma">5cdff013834722101ffc71a6feaad328</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Event Management">5cdff013834722101ffc71a6feaad328</sys_scope>
+        <sys_scope_delete display_value="">3584b1f0a8cd4a568d9a994f9584b2d9</sys_scope_delete>
+        <sys_update_name>par_dashboard_widget_bbdd58ef834762101ffc71a6feaad31c</sys_update_name>
+        <sys_update_version display_value="par_dashboard_widget_bbdd58ef834762101ffc71a6feaad31c">77dd58ef834762101ffc71a6feaad31e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-04 23:07:37</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
