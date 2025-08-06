@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message">
+    <sys_rest_message action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <authentication_type>no_authentication</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <description/>
+        <name>EventShedule</name>
+        <oauth2_profile/>
+        <protocol_name/>
+        <rest_endpoint>https://www.postb.in/1754462063258-0143344656098</rest_endpoint>
+        <sys_class_name>sys_rest_message</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-06 06:35:16</sys_created_on>
+        <sys_id>4bcdcb778387e2101ffc71a6feaad3ab</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>EventShedule</sys_name>
+        <sys_package display_value="Event Management" source="x_1539926_event_ma">5cdff013834722101ffc71a6feaad328</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management">5cdff013834722101ffc71a6feaad328</sys_scope>
+        <sys_update_name>sys_rest_message_4bcdcb778387e2101ffc71a6feaad3ab</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-06 06:50:28</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message>
+</record_update>
