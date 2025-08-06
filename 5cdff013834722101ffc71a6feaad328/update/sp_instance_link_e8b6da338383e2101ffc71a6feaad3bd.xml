@@ -11,7 +11,7 @@
         <kb_topic/>
         <order>1</order>
         <roles/>
-        <sc_cat_item/>
+        <sc_cat_item display_value="Assign Task">4af47927830f62101ffc71a6feaad3c1</sc_cat_item>
         <sc_category/>
         <short_description/>
         <size>md</size>
@@ -22,16 +22,16 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-08-06 02:33:58</sys_created_on>
         <sys_id>e8b6da338383e2101ffc71a6feaad3bd</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Assign Task</sys_name>
         <sys_package display_value="Event Management" source="x_1539926_event_ma">5cdff013834722101ffc71a6feaad328</sys_package>
         <sys_policy/>
         <sys_scope display_value="Event Management">5cdff013834722101ffc71a6feaad328</sys_scope>
         <sys_update_name>sp_instance_link_e8b6da338383e2101ffc71a6feaad3bd</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-08-06 02:34:19</sys_updated_on>
+        <sys_updated_on>2025-08-06 03:15:54</sys_updated_on>
         <title>Assign Task</title>
-        <type>page</type>
+        <type>sc_cat_item</type>
         <url/>
         <widget_parameters><![CDATA[{
 	"link_template": {
