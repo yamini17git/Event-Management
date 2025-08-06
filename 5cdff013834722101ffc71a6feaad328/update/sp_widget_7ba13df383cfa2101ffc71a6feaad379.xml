@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller = function($scope, $timeout) {
+  var c = this;
+  c.success = null;
+  c.error = null;
+
+  c.approve = function(id) {
+    c.server.get({ action: 'approve', id: id }).then(function(response) {
+      c.success = response.data.success;
+      c.error = response.data.error;
+      c.reload();
+    });
+  };
+
+  c.deny = function(id) {
+    c.server.get({ action: 'deny', id: id }).then(function(response) {
+      c.success = response.data.success;
+      c.error = response.data.error;
+      c.reload();
+    });
+  };
+
+  c.reload = function() {
+    $timeout(function() {
+      c.server.get().then(function(response) {
+        $scope.data = response.data;
+      });
+    }, 400);
+  };
+};
+]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>emp_venue_request_widget_</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>EMP Venue Request - Widget</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  data.success = '';
+  data.error = '';
+  data.bookings = [];
+
+  if (input && input.action && input.id) {
+    var vr = new GlideRecord('x_1539926_event_ma_venue');
+    if (vr.get(input.id)) {
+      if (input.action === 'approve') {
+        vr.setValue('x_booking_status', 'approved');
+        vr.update();
+        data.success = 'Venue approved.';
+      } else if (input.action === 'deny') {
+        vr.setValue('x_booking_status', 'not approved');
+        vr.update();
+        data.success = 'Venue denied.';
+      }
+    } else {
+      data.error = 'Booking not found.';
+    }
+  }
+
+  var gr = new GlideRecord('x_1539926_event_ma_venue');
+  gr.orderByDesc('sys_created_on');
+  gr.query();
+  while (gr.next()) {
+    data.bookings.push({
+      sys_id: gr.getUniqueValue(),
+      number: gr.getValue('number'),
+      name: gr.getValue('x_venue_name'),
+      location: gr.getValue('x_location'),
+      capacity: gr.getValue('x_capacity'),
+      contact_person: gr.getValue('x_contact_person'),
+      contact_number: gr.getValue('contact_number'),
+      //event: gr.getDisplayValue('x_event'),
+      status: gr.getValue('x_booking_status')
+    });
+  }
+})();
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 23:59:27</sys_created_on>
+        <sys_id>7ba13df383cfa2101ffc71a6feaad379</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>EMP Venue Request - Widget</sys_name>
+        <sys_package display_value="Event Management" source="x_1539926_event_ma">5cdff013834722101ffc71a6feaad328</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management">5cdff013834722101ffc71a6feaad328</sys_scope>
+        <sys_update_name>sp_widget_7ba13df383cfa2101ffc71a6feaad379</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-06 00:51:00</sys_updated_on>
+        <template><![CDATA[<h5 class="mb-4 text-primary fw-semibold">Venue Booking Requests</h5>
+
+<div ng-if="c.success" class="alert alert-success py-2 px-3 mb-3 small">
+  {{ c.success }}
+</div>
+<div ng-if="c.error" class="alert alert-danger py-2 px-3 mb-3 small">
+  {{ c.error }}
+</div>
+
+<div ng-if="data.bookings.length === 0" class="text-muted fst-italic">
+  No venue bookings available.
+</div>
+
+<div ng-repeat="v in data.bookings" class="card p-4 mb-4 border-start border-4 border-primary shadow-sm">
+  <div class="row">
+    <div class="col-md-6 mb-2">
+      <p class="mb-1"><strong>ID:</strong> {{ v.number }}</p>
+      <p class="mb-1"><strong>Venue:</strong> {{ v.name }}</p>
+      <p class="mb-1"><strong>Location:</strong> {{ v.location }}</p>
+      <p class="mb-1"><strong>Capacity:</strong> {{ v.capacity }}</p>
+    </div>
+    <div class="col-md-6">
+      <p class="mb-1"><strong>Contact:</strong> {{ v.contact_person }}</p>
+      <p class="mb-1"><strong>Phone:</strong> {{ v.contact_number }}</p>
+      <p class="mb-1"><strong>Event:</strong> {{ v.event }}</p>
+      <p class="mb-1"><strong>Status:</strong>
+        <span class="badge rounded-pill text-uppercase"
+          ng-class="{
+            'bg-warning text-dark': v.status === 'pending',
+            'bg-success': v.status === 'approved',
+            'bg-danger': v.status === 'denied'
+          }">
+          {{ v.status }}
+        </span>
+      </p>
+    </div>
+  </div>
+  <div class="mt-3 d-flex gap-2" ng-if="v.status === 'pending'">
+    <button class="btn btn-outline-success btn-sm" ng-click="c.approve(v.sys_id)">✓ Approve</button>
+    <button class="btn btn-outline-danger btn-sm" ng-click="c.deny(v.sys_id)">X Deny</button>
+  </div>
+</div>
+]]></template>
+    </sp_widget>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>7ba13df383cfa2101ffc71a6feaad379</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 23:59:26</sys_created_on>
+        <sys_id>fc53b9f383cfa2101ffc71a6feaad348</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 23:59:26</sys_updated_on>
+        <table>sp_widget</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

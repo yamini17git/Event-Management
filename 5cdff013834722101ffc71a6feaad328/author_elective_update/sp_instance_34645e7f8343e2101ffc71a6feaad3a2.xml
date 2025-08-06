@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>2</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">14341a7f8343e2101ffc71a6feaad3c5</sp_column>
+        <sp_widget display_value="EMP Event Venue - Widget">8994b9f783cfa2101ffc71a6feaad36d</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-06 02:23:53</sys_created_on>
+        <sys_id>34645e7f8343e2101ffc71a6feaad3a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Event Management" source="x_1539926_event_ma">5cdff013834722101ffc71a6feaad328</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management">5cdff013834722101ffc71a6feaad328</sys_scope>
+        <sys_update_name>sp_instance_34645e7f8343e2101ffc71a6feaad3a2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-06 02:23:53</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters/>
+    </sp_instance>
+    <sys_translated_text action="DELETE" query="documentkey=34645e7f8343e2101ffc71a6feaad3a2"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Event Management">5cdff013834722101ffc71a6feaad328</application>
+        <file_path/>
+        <instance_id>1a250c9eeb6daa5c56eafddacad0cd9a</instance_id>
+        <instance_name>dev348339</instance_name>
+        <name>sp_instance_34645e7f8343e2101ffc71a6feaad3a2</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>2</order><roles/><short_description/><size>md</size><sp_column display_value="1">14341a7f8343e2101ffc71a6feaad3c5</sp_column><sp_widget display_value="EMP Event Venue - Widget">8994b9f783cfa2101ffc71a6feaad36d</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-08-06 02:23:53</sys_created_on><sys_id>34645e7f8343e2101ffc71a6feaad3a2</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Event Management" source="x_1539926_event_ma">5cdff013834722101ffc71a6feaad328</sys_package><sys_policy/><sys_scope display_value="Event Management">5cdff013834722101ffc71a6feaad328</sys_scope><sys_update_name>sp_instance_34645e7f8343e2101ffc71a6feaad3a2</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-08-06 02:23:53</sys_updated_on><title/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=34645e7f8343e2101ffc71a6feaad3a2"/></record_update>]]></payload>
+        <payload_hash>-1020699082</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>81763a17838f22101ffc71a6feaad31b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-06 02:23:53</sys_created_on>
+        <sys_id>f86456ff8343e2101ffc71a6feaad334</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1987d3134100000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-06 02:23:53</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>fc6456ff3843e210a024a11668973c33</update_guid>
+        <update_guid_history>fc6456ff3843e210a024a11668973c33:-1020699082</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">3264167f8343e2101ffc71a6feaad3d6</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-06 02:24:02</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>137fe2b54d4b4196b4e5330b0c6dc2a4</sys_id>
+        <sys_metadata>34645e7f8343e2101ffc71a6feaad3a2</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Event Management" source="x_1539926_event_ma">5cdff013834722101ffc71a6feaad328</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Event Management">5cdff013834722101ffc71a6feaad328</sys_scope>
+        <sys_scope_delete display_value="">3584b1f0a8cd4a568d9a994f9584b2d9</sys_scope_delete>
+        <sys_update_name>sp_instance_34645e7f8343e2101ffc71a6feaad3a2</sys_update_name>
+        <sys_update_version display_value="sp_instance_34645e7f8343e2101ffc71a6feaad3a2">f86456ff8343e2101ffc71a6feaad334</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-06 02:24:02</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

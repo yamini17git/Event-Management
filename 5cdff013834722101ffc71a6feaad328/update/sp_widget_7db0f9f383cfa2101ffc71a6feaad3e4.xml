@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>emp_recieved_feedbacks_widget</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>EMP Recieved Feedbacks - Widget</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  data.feedbacks = [];
+  data.success = '';
+  data.error = '';
+
+  if (input && input.action && input.id) {
+    var fb = new GlideRecord('x_1539926_event_ma_feedback');
+    if (fb.get(input.id)) {
+      if (input.action === 'delete') {
+        fb.deleteRecord();
+        data.success = 'Feedback deleted successfully.';
+      }
+    } else {
+      data.error = 'Feedback not found.';
+    }
+  }
+
+  var gr = new GlideRecord('x_1539926_event_ma_feedback');
+  gr.orderByDesc('sys_created_on');
+  gr.query();
+  while (gr.next()) {
+    data.feedbacks.push({
+      sys_id: gr.getUniqueValue(),
+      number: gr.getValue('number'),
+      event: gr.getDisplayValue('x_event_id'),
+      attendee: gr.getDisplayValue('x_attendee_id'),
+      rating: gr.getValue('x_ratings'),
+      comments: gr.getValue('x_comments')
+    });
+  }
+})();
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 23:49:38</sys_created_on>
+        <sys_id>7db0f9f383cfa2101ffc71a6feaad3e4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>EMP Recieved Feedbacks - Widget</sys_name>
+        <sys_package display_value="Event Management" source="x_1539926_event_ma">5cdff013834722101ffc71a6feaad328</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management">5cdff013834722101ffc71a6feaad328</sys_scope>
+        <sys_update_name>sp_widget_7db0f9f383cfa2101ffc71a6feaad3e4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-06 00:36:07</sys_updated_on>
+        <template><![CDATA[<h5 class="mb-3 text-primary">
+  <i class="fa fa-comments"></i> Submitted Feedback
+</h5>
+
+<div ng-if="c.success" class="alert alert-success py-2 px-3 mb-2">{{ c.success }}</div>
+<div ng-if="c.error" class="alert alert-danger py-2 px-3 mb-2">{{ c.error }}</div>
+
+<div ng-if="data.feedbacks.length === 0" class="alert alert-info p-2">
+  No feedback submitted yet.
+</div>
+
+<div ng-repeat="fb in data.feedbacks" class="card mb-2 shadow-sm">
+  <div class="card-body py-2 px-3">
+    <div class="row">
+      <div class="col-md-6">
+        <strong>ID:</strong> {{ fb.number }}<br>
+        <strong>Rating:</strong> {{ fb.rating }} ⭐<br>
+        <strong>Event:</strong> {{ fb.event }}
+      </div>
+      <div class="col-md-6">
+        <strong>Attendee:</strong> {{ fb.attendee }}<br>
+        <strong>Comment:</strong>
+        <span class="d-inline-block text-truncate" style="max-width: 200px;" title="{{ fb.comments }}">
+          {{ fb.comments }}
+        </span>
+      </div>
+    </div>
+    <div class="mt-3 text-end">
+      <button class="btn btn-outline-primary btn-sm me-2" ng-click="c.view(fb.sys_id)">
+        <i class="fa fa-eye"></i> View
+      </button>
+      <button class="btn btn-outline-danger btn-sm" ng-click="c.delete(fb.sys_id)">
+        <i class="fa fa-trash"></i> Delete
+      </button>
+    </div>
+  </div>
+</div>
+]]></template>
+    </sp_widget>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>7db0f9f383cfa2101ffc71a6feaad3e4</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 23:49:37</sys_created_on>
+        <sys_id>341179f383cfa2101ffc71a6feaad32a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 23:49:37</sys_updated_on>
+        <table>sp_widget</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

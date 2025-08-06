@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_link">
+    <sp_instance_link action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph>pencil-square-o</glyph>
+        <id/>
+        <kb_article/>
+        <kb_category/>
+        <kb_topic/>
+        <order>1</order>
+        <roles/>
+        <sc_cat_item/>
+        <sc_category/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">026782ff8303e2101ffc71a6feaad3a7</sp_column>
+        <sp_page/>
+        <sp_widget display_value="Icon Link">3caa67afcb13020000f8d856634c9c2e</sp_widget>
+        <sys_class_name>sp_instance_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-06 02:28:07</sys_created_on>
+        <sys_id>ba5552ff8343e2101ffc71a6feaad357</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Create Event</sys_name>
+        <sys_package display_value="Event Management" source="x_1539926_event_ma">5cdff013834722101ffc71a6feaad328</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management">5cdff013834722101ffc71a6feaad328</sys_scope>
+        <sys_update_name>sp_instance_link_ba5552ff8343e2101ffc71a6feaad357</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-06 02:28:59</sys_updated_on>
+        <title>Create Event</title>
+        <type>page</type>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"link_template": {
+		"value": "",
+		"displayValue": ""
+	}
+}]]></widget_parameters>
+    </sp_instance_link>
+    <sys_translated_text action="DELETE" query="documentkey=ba5552ff8343e2101ffc71a6feaad357"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Event Management">5cdff013834722101ffc71a6feaad328</application>
+        <file_path/>
+        <instance_id>1a250c9eeb6daa5c56eafddacad0cd9a</instance_id>
+        <instance_name>dev348339</instance_name>
+        <name>sp_instance_link_ba5552ff8343e2101ffc71a6feaad357</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance_link"&gt;&lt;sp_instance_link action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color&gt;default&lt;/color&gt;&lt;css/&gt;&lt;glyph&gt;pencil-square-o&lt;/glyph&gt;&lt;id/&gt;&lt;kb_article/&gt;&lt;kb_category/&gt;&lt;kb_topic/&gt;&lt;order&gt;1&lt;/order&gt;&lt;roles/&gt;&lt;sc_cat_item/&gt;&lt;sc_category/&gt;&lt;short_description/&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="1"&gt;026782ff8303e2101ffc71a6feaad3a7&lt;/sp_column&gt;&lt;sp_page/&gt;&lt;sp_widget display_value="Icon Link"&gt;3caa67afcb13020000f8d856634c9c2e&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance_link&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-08-06 02:28:07&lt;/sys_created_on&gt;&lt;sys_id&gt;ba5552ff8343e2101ffc71a6feaad357&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Create Event&lt;/sys_name&gt;&lt;sys_package display_value="Event Management" source="x_1539926_event_ma"&gt;5cdff013834722101ffc71a6feaad328&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Event Management"&gt;5cdff013834722101ffc71a6feaad328&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_link_ba5552ff8343e2101ffc71a6feaad357&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-08-06 02:28:59&lt;/sys_updated_on&gt;&lt;title&gt;Create Event&lt;/title&gt;&lt;type&gt;page&lt;/type&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"link_template": {
+		"value": "",
+		"displayValue": ""
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance_link&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=ba5552ff8343e2101ffc71a6feaad357"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1447042638</payload_hash>
+        <record_name>Create Event</record_name>
+        <reverted_from/>
+        <source>81763a17838f22101ffc71a6feaad31b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-06 02:28:59</sys_created_on>
+        <sys_id>ef85da338383e2101ffc71a6feaad3b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1987d35e0bc0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-06 02:28:59</sys_updated_on>
+        <type>Instance with Link</type>
+        <update_guid>af851a33eb83e2106e24c95f43334d88</update_guid>
+        <update_guid_history>af851a33eb83e2106e24c95f43334d88:-1447042638,725552ff8643e2104bbd49899d19e259:1471239960</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Create Event">6ab552ff8343e2101ffc71a6feaad3af</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-06 02:29:44</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance_link">sp_instance_link</sys_db_object>
+        <sys_id>515d9af52e604544a7f498fddb99e084</sys_id>
+        <sys_metadata>ba5552ff8343e2101ffc71a6feaad357</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Create Event</sys_name>
+        <sys_package display_value="Event Management" source="x_1539926_event_ma">5cdff013834722101ffc71a6feaad328</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Event Management">5cdff013834722101ffc71a6feaad328</sys_scope>
+        <sys_scope_delete display_value="">3584b1f0a8cd4a568d9a994f9584b2d9</sys_scope_delete>
+        <sys_update_name>sp_instance_link_ba5552ff8343e2101ffc71a6feaad357</sys_update_name>
+        <sys_update_version display_value="sp_instance_link_ba5552ff8343e2101ffc71a6feaad357">ef85da338383e2101ffc71a6feaad3b1</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-06 02:29:44</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
