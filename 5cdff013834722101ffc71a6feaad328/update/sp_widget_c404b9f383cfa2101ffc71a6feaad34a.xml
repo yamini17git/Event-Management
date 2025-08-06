@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller = function($scope, $timeout) {
+  var c = this;
+  c.success = null;
+  c.error = null;
+
+  c.complete = function(taskId) {
+    c.server.get({ action: 'complete', task_id: taskId }).then(function(response) {
+      $scope.data = response.data;
+      c.success = response.data.success;
+      c.error = response.data.error;
+    });
+  };
+
+  c.cancel = function(taskId) {
+    c.server.get({ action: 'cancel', task_id: taskId }).then(function(response) {
+      $scope.data = response.data;
+      c.success = response.data.success;
+      c.error = response.data.error;
+    });
+  };
+};
+]]></client_script>
+        <controller_as>c</controller_as>
+        <css>h5 {&#13;
+  font-size: 16px;&#13;
+  font-weight: bold;&#13;
+}&#13;
+&#13;
+.card, .border {&#13;
+  font-size: 13px;&#13;
+  line-height: 1.3;&#13;
+}&#13;
+&#13;
+.btn-sm {&#13;
+  font-size: 12px;&#13;
+}&#13;
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>emp_tasks_widget</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>EMP Tasks - Widget</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  data.tasks = [];
+  data.success = '';
+  data.error = '';
+
+  var now = new GlideDateTime().getValue();
+
+  // Handle task action via GET
+  if (input && input.action && input.task_id) {
+    var task = new GlideRecord('x_1539926_event_ma_event_task');
+    if (task.get(input.task_id)) {
+      if (input.action === 'complete') {
+        task.x_status = 'Completed';
+        task.update();
+        data.success = 'Task marked as completed.';
+      } else if (input.action === 'cancel') {
+        task.x_status = 'Cancelled';
+        task.update();
+        data.success = 'Task cancelled.';
+      }
+    } else {
+      data.error = 'Task not found.';
+    }
+  }
+
+  // Only fetch active tasks
+  var gr = new GlideRecord('x_1539926_event_ma_event_task');
+  gr.addQuery('x_status', 'NOT IN', 'Completed,Cancelled');
+  gr.query();
+  while (gr.next()) {
+    data.tasks.push({
+      sys_id: gr.getUniqueValue(),
+      number: gr.getValue('number'),
+      name: gr.getValue('x_task_name'),
+      event: gr.getDisplayValue('x_event_id'),
+      assigned_to: gr.getDisplayValue('assigned_to'),
+      due_date: gr.getDisplayValue('x_due_date'),
+      status: gr.getValue('x_status')
+    });
+  }
+})();
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-06 00:03:06</sys_created_on>
+        <sys_id>c404b9f383cfa2101ffc71a6feaad34a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>EMP Tasks - Widget</sys_name>
+        <sys_package display_value="Event Management" source="x_1539926_event_ma">5cdff013834722101ffc71a6feaad328</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management">5cdff013834722101ffc71a6feaad328</sys_scope>
+        <sys_update_name>sp_widget_c404b9f383cfa2101ffc71a6feaad34a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-06 01:41:22</sys_updated_on>
+        <template><![CDATA[<h4>Current Tasks</h4>
+
+<div ng-if="c.success" class="alert alert-success">{{ c.success }}</div>
+<div ng-if="c.error" class="alert alert-danger">{{ c.error }}</div>
+
+<div ng-if="data.tasks.length === 0" class="alert alert-info">
+  No active tasks found.
+</div>
+
+<div ng-repeat="task in data.tasks" class="card p-3 mb-2">
+  <div><strong>Task #:</strong> {{ task.number }}</div>
+  <div><strong>Name:</strong> {{ task.name }}</div>
+  <div><strong>Event:</strong> {{ task.event }}</div>
+  <div><strong>Assigned To:</strong> {{ task.assigned_to }}</div>
+  <div><strong>Due Date:</strong> {{ task.due_date }}</div>
+  <div><strong>Status:</strong> {{ task.status }}</div>
+
+  <button class="btn btn-success btn-sm mt-2" ng-click="c.complete(task.sys_id)">Mark as Completed</button>
+  <button class="btn btn-danger btn-sm mt-2" ng-click="c.cancel(task.sys_id)">Cancel</button>
+</div>
+]]></template>
+    </sp_widget>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>c404b9f383cfa2101ffc71a6feaad34a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-06 00:03:05</sys_created_on>
+        <sys_id>ce2471f783cfa2101ffc71a6feaad3fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-06 00:03:05</sys_updated_on>
+        <table>sp_widget</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

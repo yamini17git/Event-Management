@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>true</advanced>
+        <applies_to/>
+        <condition/>
+        <decision_type>allow</decision_type>
+        <description/>
+        <local_or_existing>Local</local_or_existing>
+        <name>x_1539926_event_ma_event_task</name>
+        <operation display_value="read">read</operation>
+        <script><![CDATA[answer = false;
+
+
+if (gs.hasRole('event_coordinator')) {
+    if (!current.x_event_id.nil()) { 
+        var eventGR = new GlideRecord('x_1539926_event_ma_event'); 
+        if (eventGR.get(current.x_event_id)) {
+
+            if (eventGR.x_status == 'scheduled') { 
+                answer = true;
+            }
+        }
+    }
+}
+]]></script>
+        <security_attribute/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-06 05:32:08</sys_created_on>
+        <sys_id>bccdfe338347e2101ffc71a6feaad3c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1539926_event_ma_event_task</sys_name>
+        <sys_package display_value="Event Management" source="x_1539926_event_ma">5cdff013834722101ffc71a6feaad328</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management">5cdff013834722101ffc71a6feaad328</sys_scope>
+        <sys_update_name>sys_security_acl_bccdfe338347e2101ffc71a6feaad3c3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-06 05:32:08</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>bccdfe338347e2101ffc71a6feaad3c3</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-06 05:32:04</sys_created_on>
+        <sys_id>d97f32738347e2101ffc71a6feaad312</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-06 05:32:04</sys_updated_on>
+        <table>sys_security_acl</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

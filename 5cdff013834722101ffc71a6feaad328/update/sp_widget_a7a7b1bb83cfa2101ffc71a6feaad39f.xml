@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller = function($scope) {
+  $scope.tab = 'tasks'; // Default tab
+};
+]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>emp_event_right</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>EMP Event - Right</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  data.event_id = $sp.getParameter("event_id");
+
+  if (!data.event_id) {
+    data.message = "Please select an event from the list.";
+    return;
+  }
+
+  // Load Main Event Details
+  var gr = new GlideRecord('x_1539926_event_ma_event');
+  if (gr.get(data.event_id)) {
+    data.event = {
+      event_id: gr.getValue('number'),
+      name: gr.getValue('x_event_name'),
+      date: gr.getDisplayValue('x_event_date'),
+      location: gr.getValue('x_event_location'),
+      status: gr.getDisplayValue('x_status'),
+      contact_person: gr.getValue('x_conatct_person'),
+      contact_number: gr.getValue('contact_number'),
+      email: gr.getValue('x_email'),
+      notes: gr.getValue('work_notes')
+    };
+  } else {
+    data.message = "Selected event not found.";
+    return;
+  }
+
+  // Helper to load related records with selected fields
+  function loadRelated(tableName, fieldsToInclude) {
+    var result = [];
+    var rel = new GlideRecord(tableName);
+    rel.addQuery('x_event_id', data.event_id);
+    rel.query();
+    while (rel.next()) {
+      var r = { sys_id: rel.getUniqueValue() };
+      fieldsToInclude.forEach(function(field) {
+        r[field] = rel.getDisplayValue(field);
+      });
+      result.push(r);
+    }
+    return result;
+  }
+
+  data.tasks = loadRelated('x_1539926_event_ma_event_task', ['number', 'x_task_name', 'assigned_to', 'x_due_date', 'x_status']);
+  data.attendees = loadRelated('x_1539926_event_ma_attendee', ['number', 'x_first_name', 'x_last_name', 'x_email', 'contact_number']);
+  data.vendors = loadRelated('x_1539926_event_ma_vendor', ['number', 'x_vendor_name', 'x_conatct_person', 'contact_number', 'x_email', 'x_services_provided']);
+  data.budgets = loadRelated('x_1539926_event_ma_budget', ['number', 'x_total_budget', 'x_amount_spent', 'x_amount_left']);
+  data.schedules = loadRelated('x_1539926_event_ma_schedule', ['number', 'x_activity_name', 'x_start_time', 'x_end_time', 'x_location']);
+  data.feedbacks = loadRelated('x_1539926_event_ma_feedback', ['number', 'x_attendee_id', 'x_ratings', 'x_comments']);
+})();
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-06 00:23:18</sys_created_on>
+        <sys_id>a7a7b1bb83cfa2101ffc71a6feaad39f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>EMP Event - Right</sys_name>
+        <sys_package display_value="Event Management" source="x_1539926_event_ma">5cdff013834722101ffc71a6feaad328</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management">5cdff013834722101ffc71a6feaad328</sys_scope>
+        <sys_update_name>sp_widget_a7a7b1bb83cfa2101ffc71a6feaad39f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-06 01:22:51</sys_updated_on>
+        <template><![CDATA[<div class="container mt-5" ng-if="!data.message">
+<div class="card shadow-sm mb-4">
+<div class="card-body">
+<h3 class="card-title">
+<i class="fa fa-calendar-alt text-primary me-2"></i>{{ data.event.name }}
+<small class="text-muted">({{ data.event.event_id}})</small>
+</h3>
+<p class="mb-2"><i class="fa fa-clock me-1 text-secondary"></i><strong>Date:</strong> {{ data.event.date }}</p>
+<p class="mb-2"><i class="fa fa-map-marker-alt me-1 text-secondary"></i><strong>Location:</strong> {{data.event.location }}</p>
+<p class="mb-2"><i class="fa fa-info-circle me-1 text-secondary"></i><strong>Status:</strong> {{ data.event.status }}</p>
+<p class="mb-2">
+<i class="fa fa-user me-1 text-secondary"></i><strong>Contact:</strong>
+{{ data.event.contact_person }} |
+{{ data.event.contact_number }} |
+{{ data.event.email }}
+</p>
+<p><i class="fa fa-sticky-note me-1 text-secondary"></i><strong>Notes:</strong> {{ data.event.notes }}</p>
+</div>
+</div>
+  
+  <ul class="nav nav-tabs nav-fill mb-3">
+<li class="nav-item" ng-class="{active: tab === 'tasks'}">
+<a class="nav-link" href="" ng-click="tab='tasks">Tasks</a>
+</li>
+<li class="nav-item" ng-class="{active: tab === 'attendees'}">
+<a class="nav-link" href="" ng-click="tab='attendees'">Attendees</a>
+</li>
+<li class="nav-item" ng-class="{active: tab *vendors'}">
+<a class="nav-link" href="" ng-click="tab='vendors'">Vendors</a>
+</li>
+<li class="nav-item" ng-class="{active: tab === 'budgets'}">
+<a class="nav-link" href="" ng-click="tab='budgets'">Budget</a>
+</li>
+<li class="nav-item" ng-class="{active: tab === 'schedules'}">
+<a class="nav-link" href="" ng-click="tab='schedules'">Schedule</a>
+</li>
+<li class="nav-item" ng-class="{active: tab === 'feedbacks'}">
+<a class="nav-link" href="" ng-click="tab='feedbacks'">Feedback</a>
+</li>
+</ul>
+  
+  <div class="tab-content">
+<div ng-show="tab === 'tasks'" class="card p-3 mb-3">
+<h5>Tasks</h5>
+<ul class="list-group list-group-flush">
+<li class="list-group-item" ng-repeat="t in data.tasks">
+<strong>{{ t.x_task_name }}</strong> {{ t.x_status }}
+<span class="text-muted">(Due: {{ t.x_due_date }})</span>
+<br><small>Assigned to: {{ t.assigned_to }}</small>
+</li>
+</ul>
+</div>
+<div ng-show="tab === 'attendees'" class="card p-3 mb-3">
+<h5>Attendees</h5>
+<ul class="list-group list-group-flush">
+<li class="list-group-item" ng-repeat="a in data.attendees">
+{{ a.x_first_name }} {{ a.x_last_name}} | {{ a.x_email }} | {{ a.x_contact_number }}
+</li>
+</ul>
+</div>
+    
+    <div ng-show="tab === 'vendors" class="card p-3 mb-3">
+<h5>Vendors</h5>
+<ul class="list-group list-group-flush">
+<li class="list-group-item" ng-repeat="v in data.vendors">
+{{v.x_vendor_name}} | Contact: {{v.x_contact_person }} {{v.x_contact_number}} {{v.x_email}} |
+Services: {{v.x_services_provided }}
+</li>
+</ul>
+</div>
+<div ng-show="tab === 'budgets" class="card p-3 mb-3">
+<h5>Budget</h5>
+<ul class="list-group list-group-flush">
+<li class="list-group-item" ng-repeat="b in data.budgets">
+Total: {{ b.x_total_budget}}, Spent: {{ b.x_amount_spent}}, Remaining: {{ b.x_amount_remaining }}
+</li>
+</ul>
+</div>
+    <div ng-show="tab === 'schedules'" class="card p-3 mb-3">
+<h5>Schedule</h5>
+<ul class="list-group list-group-flush">
+<li class="list-group-item" ng-repeat="s in data.schedules">
+{{ s.x_activity_name}} | {{ s.x_start_time }} {{ s.x_end_time }} @ {{ s.x_location }}
+</li>
+</ul>
+</div>
+<div ng-show="tab === 'feedbacks'" class="card p-3 mb-3">
+<h5>Feedback</h5>
+<ul class="list-group list-group-flush">
+<li class="list-group-item" ng-repeat="f in data.feedbacks">
+Attendee: {{ f.x_attendee_id}} | Rating: {{ f.x_rating}} {{ f.x_comments }}
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div ng-if="data.message" class="alert alert-warning mt-4">
+{{ data.message }}
+</div>]]></template>
+    </sp_widget>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>a7a7b1bb83cfa2101ffc71a6feaad39f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-06 00:23:17</sys_created_on>
+        <sys_id>c6c8313f83cfa2101ffc71a6feaad3f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-06 00:23:17</sys_updated_on>
+        <table>sp_widget</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
